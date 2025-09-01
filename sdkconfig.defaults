@@ -1,0 +1,8 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2025, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+# Configure Flash Size = 4MB - Make ESPTOOL autodetect Flash Size
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+CONFIG_ESPTOOLPY_HEADER_FLASHSIZE_UPDATE=y

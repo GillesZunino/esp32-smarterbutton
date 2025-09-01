@@ -1,0 +1,7 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2024, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+# Target development board (devboard)
+CONFIG_SMARTERBUTTON_HARDWARE_PRODUCTION=
+CONFIG_SMARTERBUTTON_HARDWARE_DEVELOPMENT=y

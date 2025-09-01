@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------------------
+// Copyright 2025, Gilles Zunino
+// -----------------------------------------------------------------------------------
+
+{
+  "C_Cpp.intelliSenseEngine": "default",
+
+  "cmake.configureOnEdit": false,
+  "cmake.configureOnOpen": false,
+  
+  "idf.telemetry": false,
+  "idf.showOnboardingOnInit": false,
+
+  // Windows specific ESP IDF paths and tools
+  "idf.espIdfPathWin": "D:\\espressif\\v5.5\\esp-idf",
+  "idf.toolsPathWin": "D:\\espressif\\v5.5\\tools",
+
+  // Linux / MacOS specific ESP IDF paths and tools
+  // NOTE: For Espressif Docker images, comment out the following two lines to accept the ambient image configuration
+  "idf.espIdfPath": "/Users/gzunino/Documents/Espressif/v5.5/esp-idf",
+  "idf.toolsPath": "/Users/gzunino/Documents/Espressif/v5.5/tools",
+
+  "idf.pythonInstallPath": "D:\\espressif\\v5.5\\tools\\tools\\idf-python\\3.11.2\\python.exe",
+
+  // Clang settings
+  "clangd.path": "D:\\espressif\\v5.5\\tools\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=D:\\espressif\\v5.5\\tools\\tools\\xtensa-esp-elf\\esp-14.2.0_20241119\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe",
+    "--compile-commands-dir=d:\\Projects\\GillesZunino-GitHub\\esp32-holiday-tree/build-debug"
+  ],
+
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+
+  "idf.openOcdDebugLevel": 2,
+  "idf.openOcdConfigs": [
+    //
+    // Use one of the configurations below:
+    // * "openocd/esp32-ft2232hl-to-jtag.cfg" for ESP32 JTAG via USB to FT2232HL (2 channels) - Configured for Interface 1 (Channel B)
+    // * "openocd/esp32-ft4232hl-to-jtag.cfg" for ESP32 JTAG via USB to FT4232HL (4 channels) - Configured for Interface 1 (Channel B)
+    // * "openocd/esp32-s3-builtin-usb-to-jtag.cfg" for ESP32-S3 built-in JTAG via USB to dev board
+    //
+    //"openocd/esp32-ft2232hl-to-jtag.cfg"
+    //"openocd/esp32-s3-builtin-usb-to-jtag.cfg"
+    "openocd/esp32-ft4232hl-to-jtag.cfg"
+  ],
+  "idf.openOcdLaunchArgs": [],
+
+  "idf.deleteComponentsOnFullClean": false,
+  "idf.monitorNoReset": false,
+  "idf.launchMonitorOnDebugSession": true,
+  "idf.enableSizeTaskAfterBuildTask": true,
+
+  // SVD files from https://github.com/espressif/svd/tree/main/svd
+  "idf.svdFilePath": "${workspaceFolder}/svd/${env:IDF_TARGET}.svd",
+
+  "idf.flashType": "JTAG",
+
+  "idf.portWin": "COM5",
+  "idf.port": "/dev/tty.usbmodem1411101"
+}

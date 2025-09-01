@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------------
+// Copyright 2025, Gilles Zunino
+// -----------------------------------------------------------------------------------
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "EIDF | Eclipse (JTAG + UART)",
+      "type": "gdbtarget",
+      "request": "attach",
+
+      "cwd": "${workspaceFolder}",
+
+      "initCommands": [
+        "set remotetimeout 30",
+        "set mem inaccessible-by-default off",
+        "set remote hardware-watchpoint-limit {IDF_TARGET_CPU_WATCHPOINT_NUM}",
+        "monitor reset halt",
+        "maintenance flush register-cache"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2025, Gilles Zunino
+# -----------------------------------------------------------------------------------
+# Enable speed optimizations (-O2)
+CONFIG_COMPILER_OPTIMIZATION_DEBUG=
+CONFIG_OPTIMIZATION_LEVEL_DEBUG=
+CONFIG_COMPILER_OPTIMIZATION_LEVEL_DEBUG=
+CONFIG_COMPILER_OPTIMIZATION_DEFAULT=
+CONFIG_COMPILER_OPTIMIZATION_PERF=y
+
+# Disable error name mapping
+CONFIG_ESP_ERR_TO_NAME_LOOKUP=n

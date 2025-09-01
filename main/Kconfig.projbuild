@@ -1,0 +1,25 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2025, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+menu "Smarter Button"
+
+    config SMARTERBUTTON_WIFI_SSID
+        string "WiFi SSID"
+        default ""
+        help
+            SSID (network name) to connect to.
+
+    config SMARTERBUTTON_WIFI_PASSWORD
+        string "WiFi Password"
+        default ""
+        help
+            WiFi password (WPA/WPA2/WPA3) to use.
+
+    config SMARTERBUTTON_WIFI_CONNECT_MAXIMUM_RETRY
+        int "Maximum Connection Retries"
+        default 5
+        help
+            Set the maximum number of retries when connecting / reconnecting to the Access Point.
+
+endmenu

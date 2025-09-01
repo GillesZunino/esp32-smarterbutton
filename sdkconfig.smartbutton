@@ -1,0 +1,7 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2025, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+# Target production board (Smartbutton)
+CONFIG_SMARTERBUTTON_HARDWARE_PRODUCTION=y
+CONFIG_SMARTERBUTTON_HARDWARE_DEVELOPMENT=

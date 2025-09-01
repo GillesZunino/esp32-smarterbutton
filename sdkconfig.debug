@@ -1,0 +1,10 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2025, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+# Enable debugging (-Og)
+CONFIG_COMPILER_OPTIMIZATION_DEBUG=y
+CONFIG_OPTIMIZATION_LEVEL_DEBUG=y
+CONFIG_COMPILER_OPTIMIZATION_LEVEL_DEBUG=y
+CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y
+CONFIG_COMPILER_OPTIMIZATION_PERF=
