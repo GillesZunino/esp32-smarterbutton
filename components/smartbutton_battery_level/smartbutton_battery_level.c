@@ -259,9 +259,9 @@ static int convert_measured_voltage_divider_to_battery_voltage(int adc_measured)
     // To measure more than the ESP32 maximum, we use a voltage divider and attenuation to bring the voltage between [0 .. 2.25V]
     // Bringing the voltage close to the middle of the ADC range ([0..3.3V] -> [1.65V]) improves measurement accuracy
     //
-    /* Ignoring the BJT VCE(SAT), the measured voltage is approximately Vout = VBat / 2
-    
-                                               VBat
+    /* Ignoring the BJT VCE(SAT), the measured voltage is approximately Vout = Vbat / 2
+
+                                               Vbat
                                                 │
                                                 │
                                                ┌┴┐
