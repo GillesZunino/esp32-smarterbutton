@@ -19,7 +19,23 @@ void app_main(void) {
         err = nvs_flash_init();
     }
     ESP_ERROR_CHECK(err);
+
+    // Initialize battery level measurement
+    ESP_ERROR_CHECK(initialize_battery_level_measurement());
+
+
     do {
+        uint8_t battery_percentage = 0;
+        err = estimate_battery_remaining_percentage(&battery_percentage);
+        if (err != ESP_OK) {
+            ESP_LOGE(SmarterButtonTag, "Failed to estimate battery percentage: %s", esp_err_to_name(err));
+        } else {
+            ESP_LOGI(SmarterButtonTag, "Battery percentage: %" PRIu8 "%%", battery_percentage);
+        }
+
         vTaskDelay(pdMS_TO_TICKS(1000));
     } while (1);
+
+    
+    ESP_ERROR_CHECK(deinitialize_battery_level_measurement());
 }

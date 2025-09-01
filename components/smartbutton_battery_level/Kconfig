@@ -1,0 +1,37 @@
+# -----------------------------------------------------------------------------------
+# Copyright 2024, Gilles Zunino
+# -----------------------------------------------------------------------------------
+
+menu "SmartButton Battery Level"
+
+    config SMARTBUTTON_BATTERY_LEVEL_ENABLE_DEBUG_LOG
+        bool "Enable SmartButton battery level debug log"
+        default n
+        help
+            Enable debug log messages for the SmartButton battery level measurement.
+
+    config SMARTBUTTON_BATTERY_LEVEL_SAMPLE_COUNT
+        int "Number of samples"
+        default 10
+        help
+            Set the number of samples to average when measuring the SmartButton battery voltage.
+
+    config SMARTBUTTON_BATTERY_LEVEL_SAMPLE_DELAY
+        int "Sample delay (Ticks)"
+        default 2
+        help
+            Set the delay between samples when measuring the SmartButton battery voltage.
+            
+    config SMARTBUTTON_BATTERY_LEVEL_SAMPLE_RETRY_COUNT
+        int "Sample retry count"
+        default 2
+        help
+            Set the number of retries when measuring the SmartButton battery voltage.
+
+    config SMARTBUTTON_BATTERY_LEVEL_SAMPLE_RETRY_DELAY
+        int "Sample retry delay (Ticks)"
+        default 5
+        help
+            Set the delay between retries when measuring the SmartButton battery voltage.
+
+endmenu
