@@ -2,6 +2,8 @@
 // Copyright 2025, Gilles Zunino
 // -----------------------------------------------------------------------------------
 
+#include "sdkconfig.h"
+
 #include <freertos/FreeRTOS.h>
 
 #include <esp_log.h>
