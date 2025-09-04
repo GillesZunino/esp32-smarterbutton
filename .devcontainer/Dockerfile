@@ -2,7 +2,7 @@
 # Copyright 2025, Gilles Zunino
 # -----------------------------------------------------------------------------------
 
-ARG DOCKER_TAG=v5.5
+ARG DOCKER_TAG=v5.5.1
 FROM espressif/idf:${DOCKER_TAG}
 
 ENV LC_ALL=C.UTF-8

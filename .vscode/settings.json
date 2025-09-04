@@ -12,15 +12,15 @@
   "idf.showOnboardingOnInit": false,
 
   // Windows specific ESP IDF paths and tools
-  "idf.espIdfPathWin": "D:\\espressif\\v5.5\\esp-idf",
-  "idf.toolsPathWin": "D:\\espressif\\v5.5\\tools",
+  "idf.espIdfPathWin": "D:\\espressif\\v5.5.1\\esp-idf",
+  "idf.toolsPathWin": "D:\\espressif\\v5.5.1\\tools",
 
   // Linux / MacOS specific ESP IDF paths and tools
   // NOTE: For Espressif Docker images, comment out the following two lines to accept the ambient image configuration
   "idf.espIdfPath": "/Users/gzunino/Documents/Espressif/v5.5/esp-idf",
   "idf.toolsPath": "/Users/gzunino/Documents/Espressif/v5.5/tools",
 
-  "idf.pythonInstallPath": "D:\\espressif\\v5.5\\tools\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.pythonInstallPath": "D:\\espressif\\v5.5.1\\tools\\tools\\idf-python\\3.11.2\\python.exe",
 
   // Clang settings
   "clangd.path": "D:\\espressif\\v5.5\\tools\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
