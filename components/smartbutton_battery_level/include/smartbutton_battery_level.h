@@ -2,6 +2,8 @@
 // Copyright 2025, Gilles Zunino
 // -----------------------------------------------------------------------------------
 
+#pragma once
+
 #include <esp_check.h>
 
 esp_err_t initialize_battery_level_measurement();

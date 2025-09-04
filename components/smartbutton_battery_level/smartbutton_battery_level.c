@@ -113,8 +113,7 @@ error:
 }
 
 static esp_err_t initialize_oneshot_adc(adc_unit_t adc_unit, adc_channel_t adc_channel) {
-    ESP_ERROR_CHECK(s_adc_handle != NULL ? ESP_ERR_INVALID_STATE : ESP_OK);
-    ESP_ERROR_CHECK(s_adc_linear_calibration_handle != NULL ? ESP_ERR_INVALID_STATE : ESP_OK);
+    ESP_RETURN_ON_FALSE((s_adc_handle == NULL) && (s_adc_linear_calibration_handle == NULL), ESP_ERR_INVALID_STATE, VBatMeasurementTag, "'initialize_battery_level_measurement()' must be called first");
 
     s_adc_handle = NULL;
     s_adc_linear_calibration_handle = NULL;
