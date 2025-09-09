@@ -8,6 +8,10 @@
 
 #include <esp_log.h>
 #include <nvs_flash.h>
+
+#include "smartbutton_battery_level.h"
+
+
 // Smarter Button Log Tag
 static const char *SmarterButtonTag = "smrt_btn";
 
