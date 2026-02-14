@@ -11,28 +11,24 @@
   "idf.telemetry": false,
   "idf.showOnboardingOnInit": false,
 
-  // Windows specific ESP IDF paths and tools
-  "idf.espIdfPathWin": "D:\\espressif\\v5.5.1\\esp-idf",
-  "idf.toolsPathWin": "D:\\espressif\\v5.5.1\\tools",
-
-  // Linux / MacOS specific ESP IDF paths and tools
-  // NOTE: For Espressif Docker images, comment out the following two lines to accept the ambient image configuration
-  "idf.espIdfPath": "/Users/gzunino/Documents/Espressif/v5.5/esp-idf",
-  "idf.toolsPath": "/Users/gzunino/Documents/Espressif/v5.5/tools",
-
-  "idf.pythonInstallPath": "D:\\espressif\\v5.5.1\\tools\\tools\\idf-python\\3.11.2\\python.exe",
-
-  // Clang settings
-  "clangd.path": "D:\\espressif\\v5.5\\tools\\tools\\esp-clang\\esp-19.1.2_20250312\\esp-clang\\bin\\clangd.exe",
-  "clangd.arguments": [
-    "--background-index",
-    "--query-driver=D:\\espressif\\v5.5\\tools\\tools\\xtensa-esp-elf\\esp-14.2.0_20241119\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe",
-    "--compile-commands-dir=d:\\Projects\\GillesZunino-GitHub\\esp32-holiday-tree/build-debug"
-  ],
+  //
+  // ESP-IDF - Extension wide settings for the configuration [VS Code v2.0.x] [EIM v0.8.0]
+  //
+  //  * "idf.eimIdfJsonPath": "D:\\espressif\\\\eim_idf.json"
+  //  * "idf.eimExecutableArgs": [
+  //      "gui"
+  //    ]
+  //
+  //  ESP-IDF Per project (settings.json) configurations [VS Code v2.0.x] [EIM v0.8.0]
+  //  * "idf.currentSetup": Path to the selected ESP-IDF version to use (aka D:\\espressif\\vx.y.z\\esp-idf)
+  //
+  "idf.currentSetup": "D:\\espressif\\v5.5.2\\esp-idf",
 
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32"
   },
+
+  "idf.extraCleanPaths": [ "build", "build-devboard-debug", "build-devboard-release", "build-smartbutton-debug", "build-smartbutton-release", "cmake-build-debug",  "sdkconfig", "sdkconfig.old", "managed_components" ],
 
   "idf.openOcdDebugLevel": 2,
   "idf.openOcdConfigs": [
@@ -48,7 +44,6 @@
   ],
   "idf.openOcdLaunchArgs": [],
 
-  "idf.deleteComponentsOnFullClean": false,
   "idf.monitorNoReset": false,
   "idf.launchMonitorOnDebugSession": true,
   "idf.enableSizeTaskAfterBuildTask": true,
@@ -58,6 +53,6 @@
 
   "idf.flashType": "JTAG",
 
-  "idf.portWin": "COM5",
+  "idf.portWin": "COM7",
   "idf.port": "/dev/tty.usbmodem1411101"
 }
