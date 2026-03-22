@@ -22,7 +22,7 @@
   //  ESP-IDF Per project (settings.json) configurations [VS Code v2.0.x] [EIM v0.8.0]
   //  * "idf.currentSetup": Path to the selected ESP-IDF version to use (aka D:\\espressif\\vx.y.z\\esp-idf)
   //
-  "idf.currentSetup": "D:\\espressif\\v5.5.2\\esp-idf",
+  "idf.currentSetup": "D:\\espressif\\v6.0\\esp-idf",
 
   "idf.customExtraVars": {
     "IDF_TARGET": "esp32"
